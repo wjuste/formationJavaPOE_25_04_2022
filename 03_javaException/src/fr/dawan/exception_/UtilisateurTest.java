@@ -14,6 +14,7 @@ public class UtilisateurTest {
 		 * exception. 
 		 * Le bloc Catch va intercepter les exceptions  générées par 
 		 * les instructions du bloc try 
+		 * Le bloc Finally est executé qu'une exception intervienne ou pas 
 		 */
 		try {
 			System.out.println(nbre / 0);

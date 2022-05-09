@@ -1,5 +1,6 @@
 package fr.dawan.enumeration;
 
+import java.io.Serializable;
 
 public class Utilisateur {
 
