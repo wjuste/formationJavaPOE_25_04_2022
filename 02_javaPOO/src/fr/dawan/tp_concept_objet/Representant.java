@@ -1,0 +1,34 @@
+package fr.dawan.tp_concept_objet;
+
+public class Representant extends Commercial{
+
+
+	private final static double POURCENT_REPRESENANT = 0.2;
+	private final static double BONUS_REPRESENTANT = 800;
+	
+	public Representant() {
+		super();
+	}
+
+
+	public Representant(String nom, String prenom, int age, String date, double chiffreAffaire) {
+		super(nom, prenom, age, date, chiffreAffaire);
+		// TODO Auto-generated constructor stub
+	}
+
+
+	@Override
+	public double calculerSalaire() {
+		return getChiffreAffaire()*POURCENT_REPRESENANT + BONUS_REPRESENTANT;
+	}
+
+	@Override
+	public String getTitre() {
+		return "Le representant ";
+	}
+
+
+	
+	
+	
+}

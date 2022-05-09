@@ -1,0 +1,7 @@
+Le terme double indique que les nombres de ce type ont une précision deux
+fois supérieure à ceux du type float (on les appelle parfois variables à
+double précision). On choisira de préférence le type double dans la plupart
+des applications. La précision limitée de float se révèle insuffisante dans 
+de nombreuses situations. Les nombres de type float ont pour suffixe F,
+par exemple 3. 402F. Les nombres à décimales exprimés sans ce suffixe F 
+sont toujours considérés comme étant du type double.
