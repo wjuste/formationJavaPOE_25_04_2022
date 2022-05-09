@@ -1,16 +1,6 @@
-package fr.dawan.heritage;
+package fr.dawan.enumeration;
 
-/*
- * Nous allons voir l'utilité des accesseurs (Getters) et 
- * l'utilité des mutateurs (Setters) en java 
- * 
- * Un Getter et un Setter ce sont deux méthodes qui permettent de 
- * lire (Getter) et de  modifier (Setter) l'attribut
- * 
- * Les getters et les setters permette de mettre en place des
- * restrictions et des contraintes sur l'accès ou la mise à 
- * jours des attributs
- */
+
 public class Utilisateur {
 
 	//Visibilité : public 
@@ -25,11 +15,13 @@ public class Utilisateur {
 	private static int nbreUtilisateur;
 
 	public static final int NOMBRE_MAX_OREILLES = 2;
-
+	
+	private TypeUtilisateur typeUtilisateur;
 
 	//Constructeur par defaut (sans paramètre)
 	public Utilisateur() {
 		nbreUtilisateur++;
+		typeUtilisateur = TypeUtilisateur.CLIENT;
 	}
 
 	//Constructeur avec deux paramètre (nom et prenom)
@@ -68,4 +60,9 @@ public class Utilisateur {
 		String str = "Je suis la classe Utilisateur";
 		return str;
 	}
+
+	public TypeUtilisateur getTypeUtilisateur() {
+		return typeUtilisateur;
+	}
+	  
 }

@@ -19,6 +19,8 @@ public class UtilisateurTest {
 			System.out.println(nbre / 0);
 		} catch(ArithmeticException e) {
 			System.out.println(e.getMessage());
+		}finally {
+			System.out.println("Bloc Finally");
 		}
 		
 		try {
