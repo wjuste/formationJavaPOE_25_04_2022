@@ -1,9 +1,12 @@
 package fr.dawan.formation.serialisation_perf;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 /*
@@ -45,15 +48,43 @@ public class TestSerialisation {
 				bos.close();
 				fos.close();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
 
 	}
+	
+	public static Produit fromBin(String path) {
+		Object o = null;
+		BufferedInputStream bis = null;
+		ObjectInputStream ois = null;
+		
+		try {
+			bis = new BufferedInputStream(new FileInputStream(path));
+			ois = new ObjectInputStream(bis);
+			o = ois.readObject();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				bis.close();
+				ois.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		if(o instanceof Produit) {
+			return (Produit) o;
+		} else {
+			return null;
+		}
+	}
 
-	
-	
-	
 
 }
