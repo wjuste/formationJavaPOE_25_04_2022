@@ -50,7 +50,6 @@ public class TestPOO {
 		accounts.add(ba1);
 		accounts.add(ba2);
 		
-		
 		//Trie les données selon l'ordre de tri naturel (ordre croissant)
 		Collections.sort(accounts);
 		
