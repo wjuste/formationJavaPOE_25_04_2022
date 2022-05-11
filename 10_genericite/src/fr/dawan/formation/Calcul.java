@@ -3,9 +3,10 @@ package fr.dawan.formation;
 import java.util.ArrayList;
 import java.util.List;
 
+//On peut faire des restrictions sur le generic
+//public class Calcul<T extends BankAccount> {	
 
 public class Calcul<T> {
-	
 	private T a;
 	private T b;
 	public T getA() {

@@ -31,8 +31,8 @@ public class TestGenericite {
 		/*
 		 * Donc la programmation générique permet d'ecrire du code 
 		 * qui peut être réutilisé pour des objets de types différent
-		 * Nous avons plus pas besoin de programmer des classes différentes 
-		 * pour collecter les objets String, Double, Integer
+		 * Nous avons plus  besoin de programmer des classes différentes 
+		 * pour collecter les objets String, Double, Integer, BankAccount
 		 * car List ou ArrayList collecte les objets de n'importe quelle classe
 		 */
 		
