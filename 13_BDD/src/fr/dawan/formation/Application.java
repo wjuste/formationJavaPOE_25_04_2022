@@ -1,7 +1,6 @@
 package fr.dawan.formation;
 
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.List;
 
 public class Application {
@@ -40,8 +39,6 @@ public class Application {
 			e.printStackTrace();
 		}
 
-		
-		
 	}
 
 }
