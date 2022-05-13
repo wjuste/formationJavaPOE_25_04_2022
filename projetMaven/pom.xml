@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>fr.dawan</groupId>
+	<artifactId>projetMaven</artifactId>
+	<version>1.0</version>
+
+	<packaging>jar</packaging>
+
+	<name>projetMaven</name>
+	<url>http://maven.apache.org</url>
+
+	<!-- Variables (les version des libraires) -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- Option pour parametrer le maven-compiler-plugin afin de 
+		spécifier qu'on avec la version 1.8 -->
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		
+		<junit.version>4.12</junit.version>
+
+	</properties>
+
+	<!-- Dépendances (jar) à télécharger depuis un repository -->
+	<dependencies>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+</project>
